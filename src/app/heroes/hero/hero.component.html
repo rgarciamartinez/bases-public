@@ -1,0 +1,25 @@
+<h1>Spiderman</h1>
+<dl>
+  <td>Nombre: </td>
+  <dd> {{name}}</dd>
+
+  <td>Edad: </td>
+  <dd> {{age}}</dd>
+
+  <td>Método: </td>
+  <dd> {{getHeroDescription()}}</dd>
+
+  <td>Capitalizado: </td>
+  <dd> {{capitalizedName}}</dd>
+
+</dl>
+
+<button class="btn btn-primary me-4" (click)="changeHero()"
+*ngIf=" name != 'Tony Stark'">Cambiar Nombre</button>
+
+<button class="btn btn-primary me-4" (click)="changeAge()"
+*ngIf="age !== 47">Cambiar Edad</button>
+
+<button class="btn btn-primary" (click)="resetForm()">Reset Formulario</button>
+<br>
+<hr>

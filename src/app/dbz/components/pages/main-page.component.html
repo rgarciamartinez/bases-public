@@ -1,0 +1,17 @@
+<h1>Super Characters</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+           <!-- list-@input // main-page-property --><!-- list-@output // main-page-property -->
+    <dbz-list [CharacterList]="charactersMainPage"     (deleteCharacterListComp)="deleteCharacterMainPage($event)"></dbz-list>
+  </div>
+
+  <div class="col">
+              <!-- add-character-@output //main-page-method -->
+    <dbz-add-character (agregarCharacter)="addCharacterMainPage($event)"></dbz-add-character>
+  </div>
+  <hr>
+
+  <div class="list-group-item list-group-item-dark text-center">by @rgarciamartinez</div>
+</div>
