@@ -8,7 +8,7 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
 
-  title: string = 'Character List';
+  title: string = 'Characters List';
 
   @Output()
   deleteCharacterListComp: EventEmitter<string> = new EventEmitter();
